@@ -1,0 +1,9 @@
+class EndlessWorld{
+  
+  void LavWorld(){
+  
+  
+  }
+  
+  
+}
