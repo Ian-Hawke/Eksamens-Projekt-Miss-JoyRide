@@ -1,15 +1,35 @@
 class Runner{
   
+   
 void LavRunner(){
-rect(40,40,10,10);  
+
+fill(255);
+rect(xpos,ypos,20,20);  
 
 }
-/*når man bruger jetpaken skal man kunne 
-falde ned igen når man slipper space*/
+
+/*når man bruger jetpaken skal man kunne flyve up og
+falde ned igen når man slipper up*/
+void Gravity(){
+ float speed = 2.0;
+ if (ypos>=400)
+ ypos=400;
+ else
+ ypos +=5;
+ 
+ if(ypos<=30)
+ ypos=30;
+  
+}
+
 void Jetpack(){
 
-}
+  if (keyCode == UP) {
+    ypos -= 10;
+  }
+  
 
+}
 
 
 }

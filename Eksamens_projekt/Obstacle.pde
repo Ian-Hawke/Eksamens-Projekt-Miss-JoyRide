@@ -1,5 +1,10 @@
 class Obstacle{
 void LavObstacle(){
-rect(10,10,10,10);  
+  fill(216, 156, 167);
+rect(300,400,20,20);
+}
+void Move(){
+  float Speed =-2;
+  
 }
 }
