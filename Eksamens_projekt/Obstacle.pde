@@ -4,7 +4,7 @@ void LavObstacle(){
 rect(300,400,20,20);
 }
 void Move(){
-  float Speed =-2;
+  
   
 }
 }

@@ -11,8 +11,7 @@ rect(xpos,ypos,20,20);
 /*når man bruger jetpaken skal man kunne flyve up og
 falde ned igen når man slipper up*/
 void Gravity(){
- float speed = 2.0;
- if (ypos>=400)
+  if (ypos>=400)
  ypos=400;
  else
  ypos +=5;

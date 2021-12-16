@@ -1,5 +1,6 @@
  float xpos;
  float ypos;
+ float Speed =-2;
 
 Obstacle O = new Obstacle();
 EndlessWorld W = new EndlessWorld();
