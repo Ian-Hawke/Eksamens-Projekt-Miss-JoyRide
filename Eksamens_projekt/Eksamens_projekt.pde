@@ -5,11 +5,14 @@
  int Speed = -5;
  int x = 1;
  int y= 1;
- float r = (10);
 
-Obstacle O;
+
+Missiles M;
+
+Obstacle O = new Obstacle();
 EndlessWorld W = new EndlessWorld();
 Runner R = new Runner();
+
 
 
 void setup(){
@@ -17,7 +20,7 @@ size(640,480);
 xpos= 50;
 ypos= 400;
 frameRate(25);
-O = new Obstacle();
+M = new Missiles();
 
 }
 
@@ -29,10 +32,13 @@ W.LavWorld();
 R.LavRunner();
 R.Gravity();
 
-for (Obstacle O: ObstacleList){
-  O.LavObstacle();
-   O.move();
+for (Obstacle M : ObstacleList){
+  O.lavObstacle();
+  O.display();
+  O.move();
 }
+
+
 
 
 /* grunden til at vi putter Jetpack under draw 
