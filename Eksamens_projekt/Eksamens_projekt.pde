@@ -2,12 +2,9 @@
  
  float xpos;
  float ypos;
- int Speed = -5;
- int x = 1;
- int y= 1;
+ 
 
-
-Missiles M;
+//Missiles M;
 
 Obstacle O = new Obstacle();
 EndlessWorld W = new EndlessWorld();
@@ -20,7 +17,7 @@ size(640,480);
 xpos= 50;
 ypos= 400;
 frameRate(25);
-M = new Missiles();
+//M = new Missiles();
 
 }
 
@@ -32,10 +29,14 @@ W.LavWorld();
 R.LavRunner();
 R.Gravity();
 
+if(frameCount%(25*5)==0)
+lavMissiles();
+
 for (Obstacle M : ObstacleList){
-  O.lavObstacle();
-  O.display();
-  O.move();
+  println("Obstacle loop korer!");
+  //O.lavObstacle();
+  M.display();
+  M.move();
 }
 
 
