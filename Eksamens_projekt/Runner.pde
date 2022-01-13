@@ -1,4 +1,4 @@
-class Runner{
+class Runner extends EndlessWorld{
   
    
 void LavRunner(){
