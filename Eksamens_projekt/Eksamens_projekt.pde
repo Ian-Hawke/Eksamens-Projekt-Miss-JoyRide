@@ -1,4 +1,4 @@
- ArrayList <Obstacle> ObstacleList = new ArrayList <Obstacle>();
+ ArrayList <Obstacle> ObstacleListM = new ArrayList <Obstacle>();
  
  float xpos;
  float ypos;
@@ -37,17 +37,18 @@ lavMissiles();
 if(frameCount%(25*10)==0)
 lavShockFences();
 
-for (Obstacle M : ObstacleList){
+for (Obstacle M : ObstacleListM){
   println("Obstacle loop korer!");
   M.display();
   M.move();
 }
 
-for (Obstacle S : ObstacleList){
+/*
+for (Obstacle S : ObstacleListM){
   S.display();
   S.move();
 }
-
+*/
 
 /* grunden til at vi putter Jetpack under draw 
 er fordi at draw bliver tjekket flere gange i sekundtet og keyPressed bliver 

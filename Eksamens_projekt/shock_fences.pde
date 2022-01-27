@@ -7,14 +7,14 @@ void lavShockFences() {
     if (rS > 3 ) continue;
 
     S = new ShockFences();
-    ObstacleList.add(S);
+    ObstacleListM.add(S);
   }
 }
 
 
 
 class ShockFences extends Obstacle {
-  float SpeedS = -4;
+  float SpeedS = -10;
   float x = 1;
   float y= 1;
 
