@@ -3,8 +3,9 @@ class Runner extends EndlessWorld{
    
 void LavRunner(){
 
-fill(255);
-rect(xpos,ypos,20,20);  
+
+image(missJoyride,xpos,ypos);  
+missJoyride.resize(0,200);
 
 }
 
@@ -24,7 +25,7 @@ void Gravity(){
 void Jetpack(){
 
   if (keyCode == UP) {
-    ypos -= 10;
+    ypos -= 15;
   }
   
 

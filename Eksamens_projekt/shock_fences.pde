@@ -14,7 +14,7 @@ void lavShockFences() {
 
 
 class ShockFences extends Obstacle {
-  float SpeedS = -10;
+  float SpeedS = -6.5;
   float x = 1;
   float y= 1;
 
@@ -24,8 +24,9 @@ class ShockFences extends Obstacle {
   }
 
   void display() {
+   image(shockfences,x, y);
+    shockfences.resize(0,80);
   
-    line(x, y, x+100, y+100);
   }
 
   void move() {

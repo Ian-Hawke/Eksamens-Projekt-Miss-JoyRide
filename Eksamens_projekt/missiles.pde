@@ -1,13 +1,11 @@
 
-
-
 void lavMissiles() {
   println("SÅ er der missiler!" + frameCount);
   Missiles M;
   for (int i = 0; i < 100; i++) {
-    float rM = random(150);
+    float rM = random(100);
 
-    if (rM > 4 ) continue;
+    if (rM > 1 ) continue;
 
     M = new Missiles();
     ObstacleListM.add(M);
@@ -17,7 +15,7 @@ void lavMissiles() {
 
 
 class Missiles extends Obstacle {
-  float SpeedM = -6.5;
+  float SpeedM = -15;
   float xM = 1;
   float yM= 1;
 
@@ -27,7 +25,9 @@ class Missiles extends Obstacle {
   }
 
   void display() {
-    circle(xM, yM, 40);
+    image(missiler,xM, yM);
+    missiler.resize(0,40);
+    
   }
 
   void move() {

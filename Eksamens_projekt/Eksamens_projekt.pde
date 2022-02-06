@@ -2,53 +2,38 @@
  
  float xpos;
  float ypos;
- 
-
+ PImage missiler;
+ PImage shockfences;
+ PImage missJoyride;
+ PImage background;
 
 Obstacle O = new Obstacle();
 EndlessWorld W = new EndlessWorld();
 Runner R = new Runner();
 
 
-
 void setup(){
-size(640,480);
+size(840,640);
+
 xpos= 50;
 ypos= 400;
 frameRate(25);
-
+missiler = loadImage("missiler.png");
+shockfences = loadImage("shockfence.png");
+missJoyride = loadImage("miss joyride.png");
+background = loadImage("back.png");
 
 }
 
 void draw(){
   clear();
-  background(192,222,255);
+    image(background,-10,-10);
+    background.resize(860,750);
   
-
 W.LavWorld();
 R.LavRunner();
 R.Gravity();
 
-// hvert 5. sekund bliver der lavet misiller
-if(frameCount%(25*5)==0)
-lavMissiles();
-
-// hvert 10. sekund bliver der lavet "ShockFences"
-if(frameCount%(25*10)==0)
-lavShockFences();
-
-for (Obstacle M : ObstacleListM){
-  println("Obstacle loop korer!");
-  M.display();
-  M.move();
-}
-
-/*
-for (Obstacle S : ObstacleListM){
-  S.display();
-  S.move();
-}
-*/
 
 /* grunden til at vi putter Jetpack under draw 
 er fordi at draw bliver tjekket flere gange i sekundtet og keyPressed bliver 
