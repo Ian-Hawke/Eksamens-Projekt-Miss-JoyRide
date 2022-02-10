@@ -1,8 +1,7 @@
 class Runner extends EndlessWorld{
-  
+
    
 void LavRunner(){
-
 
 image(missJoyride,xpos,ypos);  
 missJoyride.resize(0,200);
