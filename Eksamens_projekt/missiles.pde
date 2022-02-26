@@ -1,5 +1,6 @@
 
 void lavMissiles() {
+  
   println("SÅ er der missiler!" + frameCount);
   Missiles M;
   for (int i = 0; i < 100; i++) {
@@ -28,7 +29,7 @@ class Missiles extends Obstacle {
   }
 
   void move() {
-    println("move missil");
+ 
     xM=xM+SpeedM;
   }
 }

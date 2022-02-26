@@ -15,7 +15,7 @@ lavShockFences();
 
 // her bliver misiller og shockfences lavet 
 for (Obstacle M : ObstacleListM){
-  println("Obstacle loop korer!");
+ 
   M.display();
   M.move();
 }

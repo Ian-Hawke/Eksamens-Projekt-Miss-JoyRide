@@ -30,7 +30,7 @@ class ShockFences extends Obstacle {
   }
 
   void move() {
-    println("move ShockFences ");
+    
     x=x+SpeedS;
   }
 }
