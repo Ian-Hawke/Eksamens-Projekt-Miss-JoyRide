@@ -1,5 +1,7 @@
 class Obstacle extends EndlessWorld{
-  
+   float SpeedM = -15;
+  float xM = 1;
+  float yM= 1; 
   
 void display(){
  

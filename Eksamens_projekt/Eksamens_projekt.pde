@@ -32,12 +32,17 @@ B = new Background();
 
 void draw(){
   clear();
-  
+  collision();
   // verdenen bliver lavet    
     W.LavWorld();
+    
 
-
-
-
-
+}
+void collision(){
+for(int i = 0; i<ObstacleListM.size();i++){
+  if(dist(xpos, ypos, ObstacleListM.get(i).xM, ObstacleListM.get(i).yM)<100){
+    ObstacleListM.clear();
+    
+  }
+}
 }

@@ -15,9 +15,6 @@ void lavMissiles() {
 
 
 class Missiles extends Obstacle {
-  float SpeedM = -15;
-  float xM = 1;
-  float yM= 1;
 
   Missiles() {
     xM= width;//int(random(1, width));
