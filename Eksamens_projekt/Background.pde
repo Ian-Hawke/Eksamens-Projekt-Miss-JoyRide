@@ -19,6 +19,8 @@ float xB, yB = -10 ;
    }
    if(stopBackground == true){
    xB=0;
+       textSize(100);
+    text("Game Over", 150, 400);
    }
   }
    

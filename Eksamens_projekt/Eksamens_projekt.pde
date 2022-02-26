@@ -43,6 +43,7 @@ for(int i = 0; i<ObstacleListM.size();i++){
   if(dist(xpos, ypos, ObstacleListM.get(i).xM, ObstacleListM.get(i).yM)<100){
     ObstacleListM.clear();
     stopBackground= true;
+
    
     
   }
