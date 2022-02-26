@@ -10,7 +10,7 @@ float xpos;
 Obstacle O = new Obstacle();
 EndlessWorld W = new EndlessWorld();
 Runner R = new Runner();
-
+boolean stopBackground = false;
 
 void setup(){
 size(840,640);
@@ -42,6 +42,8 @@ void collision(){
 for(int i = 0; i<ObstacleListM.size();i++){
   if(dist(xpos, ypos, ObstacleListM.get(i).xM, ObstacleListM.get(i).yM)<100){
     ObstacleListM.clear();
+    stopBackground= true;
+   
     
   }
 }

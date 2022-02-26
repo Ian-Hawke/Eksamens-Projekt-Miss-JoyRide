@@ -17,6 +17,9 @@ float xB, yB = -10 ;
    if(xB < -background.width){
      xB = 0; // starter den om når det første billede er fædrig
    }
+   if(stopBackground == true){
+   xB=0;
+   }
   }
    
   
