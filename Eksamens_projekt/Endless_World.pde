@@ -17,6 +17,7 @@ boolean stopBackground = false;
 
 class EndlessWorld{
  
+  //konstruktor 
   void lavWorld(){
     
   // her bliver billederene navngivet og sat ind

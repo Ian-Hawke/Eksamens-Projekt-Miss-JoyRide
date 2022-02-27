@@ -30,6 +30,6 @@ class Missiles extends Obstacle {
 
   void move() {
  
-    xM=xM+SpeedM;
+    xM=xM+SpeedM-9.5;
   }
 }

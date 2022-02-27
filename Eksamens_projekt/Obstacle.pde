@@ -1,8 +1,9 @@
 class Obstacle extends EndlessWorld{
-   float SpeedM = -15;
+
   float xM = 1;
   float yM= 1; 
-  
+  float SpeedM = -6.5;
+ 
 void display(){
  
 // hvert 5. sekund bliver der lavet misiller
